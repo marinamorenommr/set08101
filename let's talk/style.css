@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Libre Baskerville');
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    
+   }
+   .wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+   }
+
+   p {
+    font-family: "Montserrat";
+    color: 003566;
+    
+   }
+
+   .lead-p {
+    font-family: "Montserrat";
+    color: 003566;
+    text-align: center;
+    font-size: 22px;
+    
+}
+
+   h1 {
+    font-family: "Libre Baskerville";
+    color: 003566;
+   }
+
+   h2 {
+    font-family: "Libre Baskerville";
+    color: 003566;
+   }
+
+   h3 {
+    font-family: "Montserrat";
+    color: 003566;
+   }
+
+   .logo {
+	background-repeat:no-repeat;
+    background-position:center;
+    width: min(50vw, 300px);
+    
+}
+   
+   .main {
+    text-align: left;
+    padding-left: 350px;
+    padding-right: 350px;
+    
+   }
+  
+   @media all and (min-width: 600px) {
+    .aside { flex: 1 0 0; }
+   }
+   @media all and (min-width: 800px) {
+    .main { flex: 4 0px; }
+    .main { order: 3; }
+    .footer { order: 5; }
+    .header {order: 1;}
+   }
+
+   /*backgound image*/
+
+   body {
+    padding: 2em;
+    background-image:url('background4.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+   }
