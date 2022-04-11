@@ -1,0 +1,40 @@
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+   }
+   .wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+   }
+   .header {
+    background: #CC3F0C;
+   }
+   .footer {
+    background: #9A6D38;
+   }
+   .main {
+    text-align: left;
+    background: #33673B;
+   }
+   .aside-1 {
+    background: #D8CBC7;
+   }
+   .aside-2 {
+    background: #D8CBC7;
+   }
+   @media all and (min-width: 600px) {
+    .aside { flex: 1 0 0; }
+   }
+   @media all and (min-width: 800px) {
+    .main { flex: 4 0px; }
+    .aside-1 { order: 2; }
+    .main { order: 3; }
+    .aside-2 { order: 4; }
+    .footer { order: 5; }
+    .header {order: 1;}
+   }
+   body {
+    padding: 2em;
+   }
