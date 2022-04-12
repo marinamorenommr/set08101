@@ -1,11 +1,81 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Emoji Range Slider | CodingNepal</title>
+    <link rel="stylesheet" href="question1_style.css">
 </head>
 <body>
-    
+  <div class="wrapper">
+    <div class="section">
+      <ul class="emojis">
+        <li class="slide-emoji"><img src="emoji-1.png" alt="blue"></li>
+        <li><img src="emoji-2.png" alt="red"></li>
+        <li><img src="emoji-3.png" alt="orange"></li>
+        <li><img src="emoji-4.png" alt="yellow"></li>
+        <li><img src="emoji-5.png" alt="green"></li>
+      </ul>
+    </div>
+    <div class="slider">
+      <div class="thumb"><span></span></div>
+      <div class="progress-bar"></div>
+      <input type="range" min="0" value="0" max="100">
+    </div>
+  </div>
+
+  <script>
+    const body = document.querySelector("body");
+    const emoji = document.querySelector(".slide-emoji");
+    const input = document.querySelector("input");
+    const bar = document.querySelector(".progress-bar");
+    const thumb = document.querySelector(".thumb");
+    input.oninput = ()=>{
+      let sliderValue = input.value;
+      thumb.style.left = sliderValue + '%';
+      bar.style.width = sliderValue + '%';
+      if(sliderValue < 20){
+        emoji.style.marginTop = "0px";
+        body.classList.add("blue");
+        body.classList.remove("red");
+        body.classList.remove("orange");
+        body.classList.remove("yellow");
+        body.classList.remove("green");
+      }
+      if(sliderValue >= 20){
+        emoji.style.marginTop = "-140px";
+        body.classList.add("red");
+        body.classList.remove("blue");
+        body.classList.remove("orange");
+        body.classList.remove("yellow");
+        body.classList.remove("green");
+      }
+      if(sliderValue >= 40){
+        emoji.style.marginTop = "-280px";
+        body.classList.add("orange");
+        body.classList.remove("yellow");
+        body.classList.remove("green");
+        body.classList.remove("red");
+        body.classList.remove("blue");
+      }
+      if(sliderValue >= 60){
+        emoji.style.marginTop = "-420px";
+        body.classList.add("yellow");
+        body.classList.remove("green");
+        body.classList.remove("blue");
+        body.classList.remove("red");
+        body.classList.remove("orange");
+      }
+      if(sliderValue >= 80){
+        emoji.style.marginTop = "-560px";
+        body.classList.add("green");
+        body.classList.remove("blue");
+        body.classList.remove("red");
+        body.classList.remove("orange");
+        body.classList.remove("yellow");
+      }
+    }
+  </script>
+
 </body>
 </html>

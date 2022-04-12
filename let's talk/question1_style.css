@@ -1,0 +1,170 @@
+/*Question 1 starts here*/
+/*this is the code to style the slider that changes colour*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(#5892fd, #571edc);
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+body.blue{
+  background: linear-gradient(#5892fd, #571edc);
+}
+body.red{
+  background: linear-gradient(#fe5a54, #DA7315);
+}
+body.orange{
+  background: linear-gradient(#FED151, #DE981F);
+}
+
+body.yellow{
+  background: linear-gradient(#fef251, #dbde1f);
+}
+
+body.green{
+  background: linear-gradient(#96fe51, #3fde1f);
+}
+
+.wrapper{
+  background: #f6f6f6;
+  padding: 30px 40px 40px;
+  border-radius: 10px;
+  max-width: 350px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+}
+.wrapper .section{
+  height: 140px;
+  width: 140px;
+  overflow: hidden;
+}
+.wrapper .section .emojis{
+  height: 500%;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .section li{
+  height: 20%;
+  width: 100%;
+  list-style: none;
+  transition: all 0.3s ease;
+}
+.section li img{
+  height: 100%;
+  width: 100%;
+}
+.wrapper .slider{
+  margin-top: 40px;
+  height: 12px;
+  width: 100%;
+  position: relative;
+  background: #d9d9d9;
+  border-radius: 50px;
+}
+.slider input{
+  height: 100%;
+  width: 100%;
+  -webkit-appearance: none;
+  position: absolute;
+  background: none;
+  outline: none;
+  top: 0;
+  z-index: 2;
+}
+.slider input::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  background: none;
+  cursor: pointer;
+}
+.slider .progress-bar{
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(45deg,#5892fd, #571edc);
+  border-radius: 50px;
+  position: relative;
+}
+body.blue .progress-bar{
+  background: linear-gradient(#5892fd, #571edc);
+}
+body.red .progress-bar{
+  background: linear-gradient(#fe5a54, #DA7315);
+}
+body.orange .progress-bar{
+  background: linear-gradient(#FED151, #DE981F);
+}
+
+body.yellow .progress-bar{
+  background: linear-gradient(#fef251, #dbde1f);
+}
+
+body.green .progress-bar{
+  background: linear-gradient(#96fe51, #3fde1f);
+}
+.slider .thumb{
+  height: 25px;
+  width: 25px;
+  background: #5892fd;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  padding: 2px;
+}
+body.blue .thumb{
+  background: #5892fd;
+}
+body.red .thumb{
+  background: #fe5a54;
+}
+body.orange .thumb{
+  background: #FED151;
+}
+
+body.yellow .thumb{
+  background: #fef251;
+}
+
+body.green .thumb{
+  background:#96fe51;
+}
+.slider .thumb span{
+  height: 100%;
+  width: 100%;
+  border: 2px solid #f6f6f6;
+  border-radius: 50%;
+  background: linear-gradient(#5892fd, #571edc);
+  display: block;
+}
+body.blue .thumb span{
+  background: linear-gradient(#5892fd, #571edc);
+}
+body.red .thumb span{
+  background: linear-gradient(#fe5a54, #DA7315);
+}
+body.orange .thumb span{
+  background: linear-gradient(#FED151, #DE981F);
+}
+
+body.yellow .thumb span{
+  background: linear-gradient(#fef251, #dbde1f);
+}
+
+body.green .thumb span{
+  background: linear-gradient(#96fe51, #3fde1f);
+}
