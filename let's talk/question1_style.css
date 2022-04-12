@@ -12,30 +12,49 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: linear-gradient(#5892fd, #571edc);
+  background: url('ligh_blue_background.png');
   padding: 20px;
   transition: all 0.3s ease;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  padding-top: 350px;
 }
 body.blue{
-  background: linear-gradient(#5892fd, #571edc);
+  background: url('dark_blue_background.png');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
 }
 body.red{
-  background: linear-gradient(#fe5a54, #DA7315);
+  background: url('red_background.png');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
 }
 body.orange{
-  background: linear-gradient(#FED151, #DE981F);
+  background: url('orange_background.png');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
 }
 
 body.yellow{
-  background: linear-gradient(#fef251, #dbde1f);
+  background: url('yellow_background.png');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
 }
 
 body.green{
-  background: linear-gradient(#96fe51, #3fde1f);
+  background: url('green_background.png');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
 }
 
 .wrapper{
-  background: #f6f6f6;
+  background: none;
   padding: 30px 40px 40px;
   border-radius: 10px;
   max-width: 350px;
@@ -93,26 +112,26 @@ body.green{
 .slider .progress-bar{
   height: 100%;
   width: 0%;
-  background: linear-gradient(45deg,#5892fd, #571edc);
+  background: url('ligh_blue_background.png');
   border-radius: 50px;
   position: relative;
 }
 body.blue .progress-bar{
-  background: linear-gradient(#5892fd, #571edc);
+  background: url('dark_blue_background.png');
 }
 body.red .progress-bar{
-  background: linear-gradient(#fe5a54, #DA7315);
+  background: url('red_background.png');
 }
 body.orange .progress-bar{
-  background: linear-gradient(#FED151, #DE981F);
+  background: url('orange_background.png');
 }
 
 body.yellow .progress-bar{
-  background: linear-gradient(#fef251, #dbde1f);
+  background: url('yellow_background.png');
 }
 
 body.green .progress-bar{
-  background: linear-gradient(#96fe51, #3fde1f);
+  background: url('green_background.png');
 }
 .slider .thumb{
   height: 25px;
@@ -148,23 +167,23 @@ body.green .thumb{
   width: 100%;
   border: 2px solid #f6f6f6;
   border-radius: 50%;
-  background: linear-gradient(#5892fd, #571edc);
+  background: url('ligh_blue_background.png');
   display: block;
 }
 body.blue .thumb span{
-  background: linear-gradient(#5892fd, #571edc);
+  background: url('dark_blue_background.png');
 }
 body.red .thumb span{
-  background: linear-gradient(#fe5a54, #DA7315);
+  background: url('red_background.png');
 }
 body.orange .thumb span{
-  background: linear-gradient(#FED151, #DE981F);
+  background: url('orange_background.png');
 }
 
 body.yellow .thumb span{
-  background: linear-gradient(#fef251, #dbde1f);
+  background: url('yellow_background.png');
 }
 
 body.green .thumb span{
-  background: linear-gradient(#96fe51, #3fde1f);
+  background: url('green_background.png');
 }
