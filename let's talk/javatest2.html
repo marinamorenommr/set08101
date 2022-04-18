@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+    <label for="pets">Choose your pets:</label>
+ 
+<select id="pets" multiple="multiple">
+    <option value="dog">Dog</option>
+    <option value="cat">Cat</option>
+    <option value="rabbit">Rabbit</option>
+    <option value="parrot">Parrot</option>
+</select>
+
+<label for="letters">Choose your letter:</label>
+
+<select id="letters" multiple="multiple">
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="RC">RC</option>
+    <option value="X">X</option>
+</select>
+
+</div>
+
+<button id="submit">Get Selected Values</button>
+
+
+<script>
+
+    document.getElementById('submit').onclick = function() {
+        var selected = [];
+        for (var option of document.getElementById('pets').options)
+        {
+            if (option.selected) {
+                selected.push(option.value);
+            }
+        }
+
+        for (var option of document.getElementById('letters').options)
+        {
+            if (option.selected) {
+                selected.push(option.value);
+            }
+        }
+
+        alert(selected);
+    
+    }    
+    
+
+</script>
+</body>
+</html>

@@ -3,11 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emoji Range Slider | CodingNepal</title>
+    <title>Let's Talk</title>
     <link rel="stylesheet" href="question1_style.css">
 </head>
 <body>
+
+
   <div class="wrapper">
+
+    <header>
+      <div class="question_counter">
+        <h4>Question 1 of 5</h4>
+        </div>
+        
+      <div class="question_title">
+        <h2>How are you feeling today?</h2>
+      </div>
+    </header>
+
     <div class="section">
       <ul class="emojis">
         <li class="slide-emoji"><img src="emoji-1.png" alt="blue"></li>
@@ -22,7 +35,19 @@
       <div class="progress-bar"></div>
       <input type="range" min="0" value="0" max="100">
     </div>
+
+    <section class="question_info">
+      <p>Adjust the slider to select your overall mood score</p>
+    </section>
+
+    <footer class="footer">
+      <a class="btn" href="question1.html" target="_blank" role="button">Start</a>
+    </footer>
+
   </div>
+
+
+<!--This is the javascript to make the emotion slider work-->
 
   <script>
     const body = document.querySelector("body");

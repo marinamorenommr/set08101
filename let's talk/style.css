@@ -40,6 +40,12 @@
     color: #003566;
    }
 
+   h4 {
+    font-family: "Montserrat";
+    color: #003566;
+    font-size: 20;
+   }
+
  /*logo image*/
    header .logo {
     background-repeat:no-repeat;
@@ -52,7 +58,7 @@
     background: none;
    }
    .main {
-    text-align: left;
+    text-align: cent;
     padding-bottom: 20px;
     
    }
@@ -96,8 +102,10 @@
  /*backgound image*/
    body {
     padding: 2em;
-    background-image:url('background4.png');
+    background:linear-gradient(#72bbff, #0b37b1);
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
+    position: relative;
+    height: 90vh;
    }
