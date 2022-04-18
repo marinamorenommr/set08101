@@ -1,0 +1,1 @@
+//getting all required elements 
