@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Libre Baskerville');
+/*Question 1 starts here*/
+/*this is the code to style the slider that changes colour*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(#5892fd, #571edc);
+  padding: 20px;
+  transition: all 0.3s ease;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+
+}
+body.blue{
+  background: linear-gradient(#5892fd, #571edc);
+}
+body.red{
+  background: linear-gradient(#fe5a54, #DA7315);
+}
+body.orange{
+  background: linear-gradient(#FED151, #DE981F);
+}
+
+body.yellow{
+  background: linear-gradient(#fef251, #dbde1f);
+}
+
+body.green{
+  background: linear-gradient(#96fe51, #3fde1f);
+}
+
+.info_box{
+  background: #ffffff;
+  padding: 10px 40px 40px;
+  border-radius: 10px;
+  width: 800px;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+}
+.info_box .section{
+  height: 140px;
+  width: 140px;
+  overflow: hidden;
+  align-items: center;
+}
+.info_box .section .emojis{
+  height: 500%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info_box .section li{
+  height: 20%;
+  width: 100%;
+  list-style: none;
+  transition: all 0.3s ease;
+  align-items: center;
+}
+.section li img{
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+.info_box .slider{
+  margin-top: 40px;
+  height: 12px;
+  width: 100%;
+  position: relative;
+  background: #d9d9d9;
+  border-radius: 50px;
+  max-width: 250px;
+  align-items: center;
+}
+.slider input{
+  height: 100%;
+  width: 100%;
+  -webkit-appearance: none;
+  position: absolute;
+  background: none;
+  outline: none;
+  top: 0;
+  z-index: 2;
+  align-items: center;
+}
+.slider input::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  background: none;
+  cursor: pointer;
+  align-items: center;
+}
+.slider .progress-bar{
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(45deg,#5892fd, #571edc);
+  border-radius: 50px;
+  position: relative;
+  align-items: center;
+}
+body.blue .progress-bar{
+  background: linear-gradient(#5892fd, #571edc);
+}
+body.red .progress-bar{
+  background: linear-gradient(#fe5a54, #DA7315);
+}
+body.orange .progress-bar{
+  background: linear-gradient(#FED151, #DE981F);
+}
+
+body.yellow .progress-bar{
+  background: linear-gradient(#fef251, #dbde1f);
+}
+
+body.green .progress-bar{
+  background: linear-gradient(#96fe51, #3fde1f);
+}
+.slider .thumb{
+  height: 25px;
+  width: 25px;
+  background: #5892fd;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  padding: 2px;
+}
+body.blue .thumb{
+  background: #5892fd;
+}
+body.red .thumb{
+  background: #fe5a54;
+}
+body.orange .thumb{
+  background: #FED151;
+}
+
+body.yellow .thumb{
+  background: #fef251;
+}
+
+body.green .thumb{
+  background:#96fe51;
+}
+.slider .thumb span{
+  height: 100%;
+  width: 100%;
+  border: 2px solid #f6f6f6;
+  border-radius: 50%;
+  background: linear-gradient(#5892fd, #571edc);
+  display: block;
+}
+body.blue .thumb span{
+  background: linear-gradient(#5892fd, #571edc);
+}
+body.red .thumb span{
+  background: linear-gradient(#fe5a54, #DA7315);
+}
+body.orange .thumb span{
+  background: linear-gradient(#FED151, #DE981F);
+}
+
+body.yellow .thumb span{
+  background: linear-gradient(#fef251, #dbde1f);
+}
+
+body.green .thumb span{
+  background: linear-gradient(#96fe51, #3fde1f);
+}
+
+/*this is for the content that is not the slider */
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 0; }
+ }
+ @media all and (min-width: 800px) {
+  .main { flex: 4 0px; }
+  .aside-1 { order: 2; }
+  .main { order: 3; }
+  .aside-2 { order: 4; }
+  .footer { order: 5; }
+  .logo {order: 1;}
+ }
+
+.aside-1 {
+ background: none;
+}
+.aside-2 {
+ background: none;
+}
+
+.footer {
+  background: none;
+ }
+
+  /*logo image*/
+  .info_title .logo {
+    background-repeat:no-repeat;
+    height: 170px; 
+    width: 170px;   
+   }
+
+   p {
+    font-family: "Montserrat";
+    color: #003566;
+    text-align: center;
+    
+   }
+
+   .lead-p {
+    font-family: "Montserrat";
+    color: #003566;
+    text-align: center;
+    font-size: 65px;    
+    }
+
+   h1 {
+    font-family: "Libre Baskerville";
+    color: #003566;
+    text-align: center;
+   }
+
+   h2 {
+    font-family: "Libre Baskerville";
+    color: #003566;
+    text-align: center;
+   }
+
+   h3 {
+    font-family: "Montserrat";
+    color: #003566;
+    text-align: center;
+   }
+
+   h4 {
+    font-family: "Montserrat";
+    color: #003566;
+    font-size: 20;
+    text-align: center;
+   }
+
+   .main {
+    text-align: center;
+    flex-flow: row wrap;
+ 
+    
+   }
+
+   .intro_title{
+    text-align: center;
+    align-items: center;
+    padding-bottom: 10px;
+   }
+
+   .question_title {
+    text-align: center;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 10px;
+   }
+
+   .question_info {
+    text-align: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    flex-flow: row wrap;
+    width: 250px;
+   }
+
+   .btn {
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 5px 5px 14px 2px rgba(0,0,0,0.26);
+    border-radius: 38px;
+    display: flex;
+    font-size: medium;
+    font-weight: 700;
+    align-self: center;
+    padding: 0.9em 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    text-decoration: none;
+    width: fit-content;
+   }
